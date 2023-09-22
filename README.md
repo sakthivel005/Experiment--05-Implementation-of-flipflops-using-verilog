@@ -1,3 +1,5 @@
+## Developed by: SAKTHIVEL R
+## RegisterNumber:  212222100044
 # Experiment--05-Implementation-of-flipflops-using-verilog
 ### AIM: To implement all the flipflops using verilog and validating their functionality using their functional tables
 ### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
@@ -107,34 +109,65 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 
 ### PROGRAM 
-/*
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+
+## Program for flipflops  and verify its truth table in quartus using Verilog programming.
+## Developed by: SAKTHIVEL R
+## RegisterNumber:  212222100044
+## PROGRAM FOR SR FLIPFLOP:
+```
+module jk(j,k,q,qbar,cik);
+input j,k,cik;
+output reg q,qbar;
+initial q = 0;
+initial qbar = 1;
+always @(posedge cik)
+begin 
+q=((~q)&j)|(q&(~k));
+qbar=((~qbar)&k)| (qbar&(~j));
+end
+endmodule
+```
+## PROGRAM FOR JK FLIPFLOP:
+```
+module jk(j,k,q,qbar,cik);
+input j,k,cik;
+output reg q,qbar;
+initial q = 0;
+initial qbar = 1;
+always @(posedge cik)
+begin 
+q=((~q)&j)|(q&(~k));
+qbar=((~qbar)&k)| (qbar&(~j));
+end
+endmodule
+```
+
+## RTL LOGIC FOR FLIPFLOPS
+## RTL LOGIC FOR SR FLIPFLOP
+
+![Screenshot 2023-09-22 095238](https://github.com/sakthivel005/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120550359/b9f52ccf-8305-4fa5-a43e-d311e36c40bf)
+
+## RTL LOGIC FOR JK FLIPFLOP
+
+![Screenshot 2023-09-22 095256](https://github.com/sakthivel005/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120550359/1c88ccd8-fd66-45fd-a2ce-155672dbc507)
+
+## TIMING DIGRAMS FOR FLIP FLOPS
+## TIMING DIGRAMS FOR SR FLIPFLOP
+
+![Screenshot 2023-09-22 095310](https://github.com/sakthivel005/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120550359/e2332d32-3fd6-492d-9149-3507f5752261)
+
+## TIMING DIGRAMS FOR JK FLIFLOP
+
+![Screenshot 2023-09-22 095321](https://github.com/sakthivel005/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120550359/a8d1ceb1-d2c1-4d9b-8ebe-5d9ee3f0344a)
+
+## RESULTS![Uploading Screenshot 2023-09-22 095256.png…]()
+
+All the flipflops are implemented using verilog and their functionality has been validated using their functional tables.
 
 
 
 
 
 
-### RTL LOGIC FOR FLIPFLOPS 
 
 
-
-
-
-
-
-
-
-### TIMING DIGRAMS FOR FLIP FLOPS 
-
-
-
-
-
-
-
-
-### RESULTS 
