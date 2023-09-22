@@ -160,7 +160,7 @@ endmodule
 
 ![Screenshot 2023-09-22 095321](https://github.com/sakthivel005/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120550359/a8d1ceb1-d2c1-4d9b-8ebe-5d9ee3f0344a)
 
-## RESULTS![Uploading Screenshot 2023-09-22 095256.png…]()
+## RESULTS
 
 All the flipflops are implemented using verilog and their functionality has been validated using their functional tables.
 
