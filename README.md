@@ -136,6 +136,21 @@ qbar=r|(qbar&(~s));
 end
 endmodule
 ```
+#### PROGRAM FOR D FLIPFLOP
+```
+module d(d,clk,q,qbar);
+input d,clk;
+output reg q;
+output reg qbar;
+initial q=0;
+initiak qbar=1;
+always @(posedge clk)
+begin
+q=d;
+qbar=~q;
+end
+endmodule
+```
 #### PROGRAM FOR JK FLIPFLOP
 ```
 module jk(j,k,q,qbar,cik);
@@ -174,6 +189,9 @@ endmodule
 
 ![image](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/ae17c219-f407-45c4-891c-aa5dbf6fa960)
 
+##### RTL LOGIC FOR D FLIPFLOP
+![image](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/461f1f16-8f2d-414e-a1e1-20f217450914)
+
 
 ##### RTL LOGIC FOR JK FLIPFLOP
 ![image](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/bc45c5f9-6465-4363-9d21-31bd911ca6e7)
@@ -189,12 +207,17 @@ endmodule
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
 ##### TIMING DIGRAMS FOR SR FLIPFLOP
-![image](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/f97e675b-c044-4a3c-bd34-ebc1a6652f38)
+![image](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/4cf84e37-f845-44ae-b6dc-7f1f0d717625)
+
+
+#### TIMING DIGRAMS FOR D FLIFLOP
+![image](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/7b6aacc5-bf3d-441a-9967-9a56160f447f)
 
 #### TIMING DIGRAMS FOR JK FLIFLOP
-![image](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/b9b6ced7-bd8a-4b12-8ce1-cb2d33ce6499)
+![image](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/8666a1ee-e4ac-427a-9c3a-4604fb25ec2b)
 
-#### TIMING DIGRAMS FOR JK FLIFLOP
+
+#### TIMING DIGRAMS FOR T FLIFLOP
 ![Screenshot 2023-10-06 095706](https://github.com/Jayakrishnan22003251/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120232371/5f88880c-bee8-4edc-a9cd-3c838b2553af)
 
 
